@@ -9,13 +9,69 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+    .raleway-font {
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .inter-font {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+</head>
+<body class="m-0 p-0">
+    <!-- Header Section -->
+    <header class="container mx-auto my-5 raleway-font">
+        <!-- Navbar Secton Start -->
+        <nav class="navbar">
+            <div class="navbar-start">
+              
+              <div>
+                <h1 class="text-color-1 text-xl lg:text-4xl font-extrabold">P-Ticket</h1>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <div class="menu menu-horizontal px-1 space-x-10">
+                <a class=" text-color-3" href="#">Home</a>
+                <a class=" text-[#424247]" href="#">About</a>
+                <a class=" text-[#424247]" href="#">Destination</a>
+                <a class="text-[#424247]" href="#">Search</a>  
+              </div>
+            </div>
+            <div class="navbar-end ">
+                <button class=" text-lg flex justify-center items-center gap-2 btn text-[#1DD100]">
+                    Bus
+                    <img src="./images/bus-icon.png" alt="bus-logo">
+                </button>
+            </div>
+        </nav>
+         <!-- Navbar Section End -->
+        <!-- banner section Start -->
+        <section class="mt-12">
+            <div class="Bus">
+                <div><img style="background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%) "
+                    class="lg:h-[550px] h-[350px] w-[1300px] rounded-3xl" src="./images/banner.png" alt=""></div>
+        
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="lg:-mt-32">
+                    <h1 class="mb-5 lg:text-5xl text-2xl font-extrabold raleway-font">End-to-End Travel with <br> <span
+                        class="text-[#1DD100]">ENA Paribahan</span></h1>
+                    <p class="mb-5 inter-font lg:text-lg">Yes, you can run unit tests and view the results directly within the
+                      app. The <br> integrated testing features allow for a streamlined .</p>
+                    <button class="btn bg-[#1DD100] border-none raleway-font font-bold lg:text-xl ">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>         
+        </section>
+        <!-- Banner section End -->
     </header>
     <!-- main section -->
     <main>
@@ -28,3 +84,4 @@
     <script src="./js/index.js"></script>
 </body>
 </html>
+
