@@ -149,7 +149,7 @@
                                 <img src="images/seat-green.png" alt="">
 
                                 <p class="text-center font-bold text-xl raleway-font text-[#1DD100]">
-                                    <span>40</span>
+                                    <span id="seats-left">40</span>
                                     Seats left
                                 </p>
                             </a>
@@ -177,10 +177,10 @@
                 <!-- Right section -->
                 <img src="images/info-devider.png" alt="">
                 <!-- 550 Taka-->
-                <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-center justify-center px-20">
                     <img src="images/fare.png" alt="">
-                    <p><span>550</span> Taka</p>
-                    <p>Per Seat</p>
+                    <p class="raleway-font text-[32px] font-bold"><span class="ticket-price">550</span> Taka</p>
+                    <p class="inter-font text-[#03071299]">Per Seat</p>
                 </div>
             </div>
             <!-- Select Your Seat Section -->
@@ -207,7 +207,7 @@
                   <hr class="border border-dashed" />
                   <div class="flex justify-end my-5">
                     <button class="btn">
-                      <img src="./images/wheel.png" alt="" />
+                      <img src="./images/Group 56.svg" alt="" />
                     </button>
                   </div>
                   <!--button option -->
@@ -215,62 +215,62 @@
                     <div
                       class="text-[18px] text-[#03071280] grid grid-rows-10 gap-10 justify-center items-center"
                     >
-                      <p>A</p>
-                      <p>B</p>
-                      <p>C</p>
-                      <p>D</p>
-                      <p>E</p>
-                      <p>F</p>
-                      <p>G</p>
-                      <p>H</p>
-                      <p>I</p>
-                      <p>J</p>
+                      <p class="btn const selectedSet=">A</p>
+                      <p class="btn button">B</p>
+                      <p class="btn button">C</p>
+                      <p class="btn button">D</p>
+                      <p class="btn button">E</p>
+                      <p class="btn button">F</p>
+                      <p class="btn button">G</p>
+                      <p class="btn button">H</p>
+                      <p class="btn button">I</p>
+                      <p class="btn button">J</p>
                     </div>
                     <!-- all button -->
-                    <div
-                      class="grid grid-cols-4 grid-rows-10 justify-center items-center gap-10"
-                    >
-                      <button class="btn">A1</button>
-                      <button class="btn">A2</button>
-                      <button class="btn">A3</button>
-                      <button class="btn">A4</button>
-                      <button class="btn">B1</button>
-                      <button class="btn">B2</button>
-                      <button class="btn">B3</button>
-                      <button class="btn">B4</button>
-                      <button class="btn">C1</button>
-                      <button class="btn">C2</button>
-                      <button class="btn">C3</button>
-                      <button class="btn">C4</button>
-                      <button class="btn">D1</button>
-                      <button class="btn">D2</button>
-                      <button class="btn">D3</button>
-                      <button class="btn">D4</button>
-                      <button class="btn">E1</button>
-                      <button class="btn">E2</button>
-                      <button class="btn">E3</button>
-                      <button class="btn">E4</button>
-                      <button class="btn">F1</button>
-                      <button class="btn">F2</button>
-                      <button class="btn">F3</button>
-                      <button class="btn">F4</button>
-                      <button class="btn">G1</button>
-                      <button class="btn">G2</button>
-                      <button class="btn">G3</button>
-                      <button class="btn">G4</button>
-                      <button class="btn">H1</button>
-                      <button class="btn">H2</button>
-                      <button class="btn">H3</button>
-                      <button class="btn">H4</button>
-                      <button class="btn">I1</button>
-                      <button class="btn">I2</button>
-                      <button class="btn">I3</button>
-                      <button class="btn">I4</button>
-                      <button class="btn">J1</button>
-                      <button class="btn">J2</button>
-                      <button class="btn">J3</button>
-                      <button class="btn">J4</button>
-                    </div>
+                   <div
+                     class="grid grid-cols-4 grid-rows-10 justify-center items-center gap-10"
+                  >
+                     <button id="btn"  class="btn">A1</button>
+                     <button id="btn" class="btn">A2</button>
+                     <button id="btn" class="btn">A3</button>
+                     <button id="btn" class="btn">A4</button>
+                     <button id="btn" class="btn">B1</button>
+                     <button id="btn" class="btn">B2</button>
+                     <button id="btn" class="btn">B3</button>
+                     <button id="btn" class="btn">B4</button>
+                     <button id="btn" class="btn">C1</button>
+                     <button id="btn" class="btn">C2</button>
+                     <button id="btn" class="btn">C3</button>
+                     <button id="btn" class="btn">C4</button>
+                     <button id="btn" class="btn">D1</button>
+                     <button id="btn" class="btn">D2</button>
+                     <button id="btn" class="btn">D3</button>
+                     <button id="btn" class="btn">D4</button>
+                     <button id="btn" class="btn">E1</button>
+                     <button id="btn" class="btn">E2</button>
+                     <button id="btn" class="btn">E3</button>
+                     <button id="btn" class="btn">E4</button>
+                     <button id="btn" class="btn">F1</button>
+                     <button id="btn" class="btn">F2</button>
+                     <button id="btn" class="btn">F3</button>
+                     <button id="btn" class="btn">F4</button>
+                     <button id="btn" class="btn">G1</button>
+                     <button id="btn" class="btn">G2</button>
+                     <button id="btn" class="btn">G3</button>
+                     <button id="btn" class="btn">G4</button>
+                     <button id="btn" class="btn">H1</button>
+                     <button id="btn" class="btn">H2</button>
+                     <button id="btn" class="btn">H3</button>
+                     <button id="btn" class="btn">H4</button>
+                     <button id="btn" class="btn">I1</button>
+                     <button id="btn" class="btn">I2</button>
+                     <button id="btn" class="btn">I3</button>
+                     <button id="btn" class="btn">I4</button>
+                     <button id="btn" class="btn">J1</button>
+                     <button id="btn" class="btn">J2</button>
+                     <button id="btn" class="btn">J3</button>
+                     <button id="btn" class="btn">J4</button>
+                   </div> 
                   </div>
                 </div>
                 <!-- select your seat section Two -->
@@ -285,7 +285,7 @@
                       >
                         <h3 class="inter-font text-[16px] font-medium">
                           Seat
-                          <span
+                          <span id="selected-ticket"
                             class="text-[12px] px-2 rounded-lg text-white font-medium inter- bg-[#1dd100]"
                             >0</span
                           >
@@ -296,7 +296,7 @@
                       <hr class="mt-5 bg-gray-400" />
                       <div class="flex justify-between">
                         <h1 class="text-[16px] font-medium">Total Price</h1>
-                        <p class="font-bold">BDT 1100</p>
+                        <p class="font-bold">BDT <span id="total-price">00</span></p>
                       </div>
                       <div class="flex flex-col lg:flex-row">
                         <input
@@ -309,6 +309,10 @@
                         >
                           Apply
                         </button>
+                      </div>
+                      <div class="flex justify-between">
+                        <h1 class="text-[16px] font-medium">Grand Total Price</h1>
+                        <p class="font-bold">BDT <span id="grand-total">00</span></p>
                       </div>
                     </div>
       
@@ -341,10 +345,21 @@
                         placeholder="Enter your email id"
                       />
                       <button
+                      onclick="my_modal_3.showModal()"
                         class="btn bg-[#1DD100] w-full inter-font font-extrabold text-white text-sm"
                       >
                         Next
                       </button>
+                      <!-- You can open the modal using ID.showModal() method -->
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click on ✕ button to close</p>
+  </div>
+</dialog>
                       <div class="flex justify-between text-[#03071280] inter-font underline">
                         <a href="#">Terms and Conditions</a>
                         <a href="#">Cancellation Policy</a>
