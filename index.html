@@ -9,8 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +63,7 @@
                     class="text-[#1DD100]">Ena Paribahan</span></h1>
                 <p class="mb-5 inter-font lg:text-lg">Yes, you can run unit tests and view the results directly within the
                   app. The <br> integrated testing features allow for a streamlined .</p>
-                <button class="btn bg-[#1DD100] border-none raleway-font font-bold lg:text-xl ">Buy Tickets</button>
+                  <a  class="btn btn btn-accent bg-[#1DD100] border-none raleway-font font-bold lg:text-xl " href="#section">Buy Tickets</a>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@
             <img src="./images/cupon-devider.png" alt="" />
             <div class="flex flex-col justify-center">
               <h1 class="raleway-font font-bold text-4xl text-[#030712]">
-                NEW15%
+                NEW15
               </h1>
               <h3 class="text-lg opacity-60">Coupon Code</h3>
             </div>
@@ -124,7 +124,7 @@
       </section>
       <!-- best offer end-->
       <!-- Poribahon container -->
-      <section class="my-28 bg-[#F7F8F8] border-2  border-t-[#1DD100] border-radius2">
+      <section id="section" class="my-28 bg-[#F7F8F8] border-2  border-t-[#1DD100] border-radius2">
         <div class="container mx-auto ">
           <!-- Prinahon title -->
             <div class="flex flex-col mx-auto w-1/2 text-center space-y-6">
@@ -294,12 +294,19 @@
                         <h3 class="inter-fint text-[16px] font-medium">Price</h3>
                       </div>
                       <hr class="mt-5 bg-gray-400" />
-                      <div class="flex justify-between">
+                      <div id="details"
+                                    class="border-b-2 text-base font-inter text-[#03071299] justify-between">
+
+                                </div>
+                      <div  class="flex justify-between">
                         <h1 class="text-[16px] font-medium">Total Price</h1>
                         <p class="font-bold">BDT <span id="total-price">00</span></p>
                       </div>
-                      <div class="flex flex-col lg:flex-row">
-                        <input
+                      <div id="discount-price" class="flex justify-between mt-2">
+
+                      </div>
+                      <div id="input-all" class="flex flex-col lg:flex-row  ">
+                        <input id="input-field"
                           class="py-3 px-8 bg-white shadow-lg rounded-l-lg"
                           type="text"placeholder="Have any copupon?"
                         />
@@ -315,7 +322,7 @@
                         <p class="font-bold">BDT <span id="grand-total">00</span></p>
                       </div>
                     </div>
-      
+  
                     <div class="space-y-5 mt-5">
                       <label class="text-[16px] inter-font font-semibold block" for="name"
                         >Passenger Name*</label
@@ -344,32 +351,46 @@
                         id="email"
                         placeholder="Enter your email id"
                       />
-                      <button
+                      
+                      <!-- You can open the modal using ID.showModal() method -->
+                      <div>
+                        <button
                       onclick="my_modal_3.showModal()"
                         class="btn bg-[#1DD100] w-full inter-font font-extrabold text-white text-sm"
                       >
                         Next
                       </button>
-                      <!-- You can open the modal using ID.showModal() method -->
-<dialog id="my_modal_3" class="modal">
-  <div class="modal-box">
-    <form method="dialog">
-      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-    </form>
-    <h3 class="font-bold text-lg">Hello!</h3>
-    <p class="py-4">Press ESC key or click on ✕ button to close</p>
-  </div>
-</dialog>
+                      <dialog id="my_modal_3" class="modal">
+                     <div class="modal-box">
+                    <form method="dialog">
+                     <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                     </form>
+                     <div class="flex justify-center items-center ">
+                      <img src="./images/success.png" alt="">
+                  </div>
+                    <h3 class="font-bold  my-3 text-2xl  text-[#27AE60] text-center">SUCCESS</h3>
+                    <p class="py-2  text-xl text-black text-center">Thank you for Booking Our Bus Seats.<br>
+                      We are working hard to find the best service and deals for you. <br>
+                  </p>
+                  <p  class="py-2 text-[#4A4A4A] font-normal text-center">Shortly you will find a confirmation in
+                    your email.</p>
+                    <div class="modal-action flex justify-center items-center">
+                      <a href="#"
+                          class=" border-none rounded-[32px] font-semibold text-xl bg-[#27AE60] text-white py-4 px-20 text-center" id="continue">Continue</a>
+                  </div>
+
+                   </div>
+                     </dialog>
                       <div class="flex justify-between text-[#03071280] inter-font underline">
                         <a href="#">Terms and Conditions</a>
                         <a href="#">Cancellation Policy</a>
+                      </div>
                       </div>
                     </div>
                 </div>
               </div>
             </section>
-             
-                  
+                        
    </main>
 
     <script src="./js/index.js"></script>
